@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slider{
+            width: 500px;
+            height: 500px;
+            overflow: hidden;
+            background: tomato;
+        }
+        .sliderContainer{
+            width: 1500px;
+            height: 100%;
+            position: relative;
+            left: 0;
+            transition: left 1000ms;
+            display: flex;
+        }
+        .slides{
+            flex: 1;
+            height: 100%;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slider">
+        <div class="sliderContainer">
+            <div class="slides" style="background: green;">slide 1</div>
+            <div class="slides" style="background: red;">slide 2</div>
+            <div class="slides" style="background: grey;">slide 3</div>
+        </div>
+    </div>
+    <button class="navigation navigation-prev">prev slide</button>
+    <button class="navigation navigation-next">prev next</button>
+    <script src="slider.js"></script>
+</body>
+</html>
